@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# SIPSniff Version 1.3
+#
+# Simple installation script
+#
+
+CP="/bin/cp"
+DIR="/usr/sbin"
+FILE="sipsniff"
+
+if [ -x sipsniff ]; then
+ $CP $FILE $DIR
+ echo "SIPSniff installed."
+fi

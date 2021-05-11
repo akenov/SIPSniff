@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# SIPSniff Version 1.3
+#
+# Simple compilation script
+#
+
+GCC="/usr/bin/cc"
+OBJ="sipsniff"
+SRC="sipsniff.c"
+LIB="-lpcap"
+
+echo "Compiling SIPSniff..."
+$GCC -o $OBJ $SRC $LIB
+echo "Done."
+
+# EOF
